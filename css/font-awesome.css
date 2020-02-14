@@ -12,6 +12,7 @@
   font-style: normal;
 }
 .fa {
+
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -711,7 +712,7 @@
 .fa-cloud:before {
   content: "\f0c2";
 }
-.fa-flask:before {
+.fa-pagelines:before {
   content: "\f0c3";
 }
 .fa-cut:before,
@@ -1336,3 +1337,4 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+
