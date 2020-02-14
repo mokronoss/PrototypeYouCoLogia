@@ -42,7 +42,11 @@ h3,
 h4,
 h5,
 h6 {
-	color: #222;
+	color: #4e817b;
+}
+
+p{
+	color: #4e817b;
 }
 
 h1,
@@ -53,6 +57,7 @@ h5,
 h6 {
 	font-style: normal;
 	margin: 0 0 20px 0;
+
 }
 h1 {
 	font-size: 40px;
@@ -502,6 +507,25 @@ h1 a.navbar-brand {
 	margin-top: 6rem;
 	margin-bottom: 3rem;;
 }
+/* ==========================
+ --- section-services ---
+============================= */
+#section-services .fa{
+	font-size: 7rem;
+	padding: 1.5rem;
+
+}
+#section-services #car{
+	color:#a41887;
+}
+#section-services #bus{
+	color:#016cb1;
+}
+
+#section-services #bike{
+	color:#46cb18;
+}
+
 /*===========================
   --- Featured section ----
 =========================== */
