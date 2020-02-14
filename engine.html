@@ -15,11 +15,10 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/styles/fontawesome.css" />
 		
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
-			<!--fonteawesome-->
+		<!--fonteawesome-->
 		<script src="https://use.fontawesome.com/cf1cca4238.js"></script>
     </head>
 	 
@@ -38,7 +37,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#section-services">Calculator</a></li>
+						<li><a href="./index.html#section-services">Calculator</a></li>
 						<li><a href="#section-about">About us</a></li>
 						<li><a href="#section-contact">Contact</a></li>
 					</ul>
@@ -53,8 +52,7 @@
 						
 						<div class="align-center">
 							<img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
-							<h2 style="color: #4e817b" class="slogan">Choisissez le type de carburant</h2>	
-							<i class="fas fa-gas-pump fa-5x mar-bot20" style="color:#46cb18"></i>
+							<h2 style="color: #4e817b" class="slogan">Choisissez le type de véhicule</h2>		
 						</div>
 					</div>
 				</div>
@@ -62,66 +60,38 @@
 		</section>
 		
 		<!-- services -->
-		<section id="section-services" class="section pad-bot30 bg-white">
+		<section id="section-services-engine" class="section pad-bot30 bg-white">
 		<div class="container"> 
-		
-			<div class="row mar-bot40">
+
+			<div class="row mar-bot40"><a href="./fuel.html">
 				<div class="col-lg-4" >
-					<div class="align-center">
-						<button id="fuel">PNG</button>
+					<div class="align-center" >
+                        <a href="./fuel.html"><img src="https://img.icons8.com/color/48/000000/car.png">
+                        <h4 class="text-bold">petite voiture</h4></a>
+                        <a href="./fuel.html"><img src="https://img.icons8.com/cotton/64/000000/pickup.png">
+                        <h4 class="text-bold">4x4</h4></a>					
+					</div>
+				</div>
+					
+				<div class="col-lg-4" >
+					<div class="align-center" >
+                        <a href="./fuel.html"><img src="https://img.icons8.com/doodle/48/000000/trailer--v1.png">
+                        <h4 class="text-bold">Camper</h4></a>
+                        <a href="./fuel.html"><img src="https://img.icons8.com/office/30/000000/truck.png">
+                        <h4 class="text-bold">Camionette</h4></a>
+					</div>
+				</div>
 			
-						<h4>Si vous utilisez de Piped Natural Gas </h4>
-					</div>
-				</div>
-					
 				<div class="col-lg-4" >
-					<div class="align-center">
-						<button id="fuel">DIESEL</button>
-						<h4>Si vous utilisez de Diesel </h4>
-					
-					
+                    <div class="align-center" id="bike">
+                        <a href="./fuel.html"><img src="https://img.icons8.com/officel/80/000000/scooter.png">
+                        <h4 class="text-bold">Motor</h4></a>
+                        <a href="./fuel.html"><img src="https://img.icons8.com/doodle/96/000000/kick-scooter.png">
+                        <h4 class="text-bold">Trottinette</h4></a>
+
+                        
 					</div>
 				</div>
-			
-				<div class="col-lg-4" >
-					<div class="align-center">
-						<button id="fuel">GASOLINE</button>
-						<h4>Si vous utilisez de Benzine</h4>
-					</div>
-				</div>
-				<div class="row mar-bot40">
-					<div class="col-lg-4" >
-						<div class="align-center">
-							<button id="fuel" >HYBRID</button>
-				
-							<h4>Si vous utilisez de Hybride System</h4>
-						</div>
-					</div>
-						
-					<div class="col-lg-4" >
-						<div class="align-center">
-							<button id="fuel" >ELECTRIC</button>
-							
-							<h4>Si vous utilisez de Electric car</h4>
-						
-						</div>
-					</div>
-
-					<div class="col-lg-4" >
-						<div class="align-center">
-							<button id="fuel" >HYDRO</button>
-							
-							<h4>Si vous utilisez de Hydro system</h4>
-						
-						</div>
-					</div>
-
-
-
-
-
-
-
 			
 			</div>	
 
@@ -169,32 +139,7 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/validate.js"></script>
     <script src="js/main.js"></script>
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
+
         
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-            }
-        </script>
 	</body>
 </html>

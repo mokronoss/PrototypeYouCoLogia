@@ -535,6 +535,22 @@ h1 a.navbar-brand {
 	color:#46cb18;
 }
 
+#section-services a{
+	text-decoration: none; 
+	/* to avoid changing color */
+    color: inherit;
+
+}
+
+
+/*===========================
+  --- engine----
+=========================== */
+#section-services-engine img{
+	width: 8rem;
+	height: 8rem;
+
+}
 /*===========================
   --- Featured section ----
 =========================== */
