@@ -432,7 +432,6 @@ section.section {
 	height: 100px;
 	background-color: #4e817b;
 	display: block;
-	vertical-align: middle;
 	text-align: center;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -542,7 +541,7 @@ h1 a.navbar-brand {
 
 section.featured {
 	padding: 200px 0 60px;
-	background: white
+	background: white;
 	color: #fdfdfd;
 }
 
@@ -581,7 +580,6 @@ section.featured.inner {
 }
 
 .flexslider .slides img {
-	width: auto;
 	display: inline;
 }
 
