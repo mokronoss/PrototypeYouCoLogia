@@ -37,7 +37,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#section-services">Calculator</a></li>
+						<li><a href="./index.html#section-services">Calculator</a></li>
 						<li><a href="about.html">About us</a></li>
 						<li><a href="#section-contact">Contact</a></li>
 					</ul>
@@ -52,12 +52,7 @@
 						
 						<div class="align-center">
 							<img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
-							<h2 style="color: #4e817b" class="slogan">Bienvenue à  <span style="color:#46cb18">You</span><span style="color:#a41887">Co</span><span style="color:#016cb1">Logia</span></h2>
-							<p style="color: #4e817b" >
-								Le but de nôtre application « YouCoLogia »  est d’informer le citoyen des impacts climatique lors de ses déplacements et des alternatives « réalistes » leur permettant de diminuer leur empreinte écologique. L’application permet d’estimer le coût écologique à partir des données encodées.
-
-				
-							</p>	
+							<h2 style="color: #4e817b" class="slogan">Our Mission</h2>		
 						</div>
 					</div>
 				</div>
@@ -65,35 +60,41 @@
 		</section>
 		
 		<!-- services -->
-		<section id="section-services" class="section pad-bot30 bg-white">
+		<section id="section-services-engine" class="section pad-bot30 bg-white">
 		<div class="container"> 
-			<div class="row text-center">
-				<h3>Choisissez votre type de transport</h3>
-			</div>
-			<div class="row mar-bot40">
+
+			<div class="row mar-bot40"><a href="./fuel.html">
 				<div class="col-lg-4" >
-					<div class="align-center"  id="car" ><a href="./engine.html">
-						<i class="fa fa-car"aria-hidden="true"></i>
-						<i class="fa fa-motorcycle" aria-hidden="true"></i>
-						<h4 class="text-bold">Vous aimez des véhicules</h4></a>
+					<div class="align-center" >
+                        <img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">La plateforme de création un compte utilisateur
+						</h4></a>
+                        <img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">La carte montrant le parcours de l'utilisateur et son alternative écologique
+						</h4></a>					
 					</div>
 				</div>
 					
 				<div class="col-lg-4" >
-					<div class="align-center" id="bus" ><a href="#">
-						<i class="fa fa-bus" aria-hidden="true"></i>
-						<i class="fa fa-subway" aria-hidden="true"></i>
-						<i class="fa fa-train" aria-hidden="true"></i>
-						<h4 class="text-bold">Vous aimez du transport public</h4></a>
+					<div class="align-center" >
+                        <img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">D'estimer la quantité de CO2 et de particule fine qui a été emitées pendant un trajet d’utilistateur en fonction des paramètres donnés par lui
+						</h4></a>
+						<img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">Proposer un alternatif de surmonter le même itinéraire d'une manière qui réduit la pollution, plus économique et écologique</h4></a>
 					</div>
 				</div>
 			
 				<div class="col-lg-4" >
-					<div class="align-center" id="bike"><a href="#">
-						<i class="fa fa-bicycle"  aria-hidden="true"></i>
-						<i class="fa fa-male" aria-hidden="true"></i>
-						<h4 class="text-bold">Vous aimez faire des exercices</h4></a>
+                    <div class="align-center" id="bike">
+						<img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">Tenir des statistiques sur les émissions de CO2 de l'utilisateur lors de ses déplacements quotidiens
+						</h4></a>
+                        <img src="./img/photos/leaves-pixabay.png" class="leaf" alt="YouCoLogia">
+                        <h4 class="text-bold">Tenir des statistiques sur les émissions de CO2 de l'utilisateur lors de ses déplacements quotidiens
+						</h4></a>
 
+                        
 					</div>
 				</div>
 			
@@ -143,32 +144,7 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/validate.js"></script>
     <script src="js/main.js"></script>
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
+
         
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#1C705B"		}		]	}	]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-            }
-        </script>
 	</body>
 </html>
